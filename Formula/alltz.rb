@@ -8,16 +8,16 @@ class Alltz < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/abradburne/alltz/releases/download/v0.1.3/alltz-aarch64-apple-darwin.tar.gz"
-      sha256 "7233ee6665b75c167b0d39c6641383cbe9bbb5568272d4160023b665a94b69ec" # aarch64
+      sha256 "5945d14a3872041dda2671a4a0231f48cd37900cb9ddff6c22074a233ae1e57d" # aarch64
     else
       url "https://github.com/abradburne/alltz/releases/download/v0.1.3/alltz-x86_64-apple-darwin.tar.gz"
-      sha256 "e39314bcc757b66efbcc4ab38feea9faa01d605dafe22f5ef507cd6d5508a80a" # x86_64
+      sha256 "b33af553c787537180600f308db2e1b0dfdbd55e76886dba4be4f01008400785" # x86_64
     end
   end
 
   on_linux do
     url "https://github.com/abradburne/alltz/releases/download/v0.1.3/alltz-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "a4e144a403f0cac9058f6fde5a1eda929d5efda0446a1707a53142f0c812da28" # linux
+    sha256 "732860061cf98221aa1d96c9c944650e21eb486950a519a81c55f1a6362f1665" # linux
   end
 
   # Alternative: build from source (requires Rust toolchain)
