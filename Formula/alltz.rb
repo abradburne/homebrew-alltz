@@ -37,7 +37,7 @@ class Alltz < Formula
   end
 
   test do
-    assert_match "alltz 0.1.2", shell_output("#{bin}/alltz --version")
+    assert_match "alltz 0.1.3", shell_output("#{bin}/alltz --version")
 
     # Test CLI commands
     assert_match "Available Timezones", shell_output("#{bin}/alltz list")
