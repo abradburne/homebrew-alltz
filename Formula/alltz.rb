@@ -1,23 +1,23 @@
 class Alltz < Formula
   desc "🌍 Terminal-based timezone viewer for developers and remote teams"
   homepage "https://github.com/abradburne/alltz"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   # Primary installation method: precompiled binaries
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/abradburne/alltz/releases/download/v0.1.2/alltz-aarch64-apple-darwin.tar.gz"
-      sha256 "4e4c41e433450553a1017de5b31af9ff7e41ff68c60046bfbef63dd2f14b0bf3" # aarch64
+      url "https://github.com/abradburne/alltz/releases/download/v0.1.3/alltz-aarch64-apple-darwin.tar.gz"
+      sha256 "7233ee6665b75c167b0d39c6641383cbe9bbb5568272d4160023b665a94b69ec" # aarch64
     else
-      url "https://github.com/abradburne/alltz/releases/download/v0.1.2/alltz-x86_64-apple-darwin.tar.gz"
-      sha256 "9b94d643d0f0ee3a056250aca9a1394b44a26dbbd32ee164476f3658169737ea" # x86_64
+      url "https://github.com/abradburne/alltz/releases/download/v0.1.3/alltz-x86_64-apple-darwin.tar.gz"
+      sha256 "e39314bcc757b66efbcc4ab38feea9faa01d605dafe22f5ef507cd6d5508a80a" # x86_64
     end
   end
 
   on_linux do
-    url "https://github.com/abradburne/alltz/releases/download/v0.1.2/alltz-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e8ac8adffdd2e07e722a88f8d1a3b8ff082b76894a877d83783a6fb254e1343b" # linux
+    url "https://github.com/abradburne/alltz/releases/download/v0.1.3/alltz-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "a4e144a403f0cac9058f6fde5a1eda929d5efda0446a1707a53142f0c812da28" # linux
   end
 
   # Alternative: build from source (requires Rust toolchain)
