@@ -16,7 +16,7 @@ class Alltz < Formula
   end
 
   on_linux do
-    url "https://github.com/abradburne/alltz/releases/download/v0.1.2/alltz-x86_64-apple-darwin.tar.gz"
+    url "https://github.com/abradburne/alltz/releases/download/v0.1.2/alltz-x86_64-unknown-linux-gnu.tar.gz"
     sha256 "e8ac8adffdd2e07e722a88f8d1a3b8ff082b76894a877d83783a6fb254e1343b" # linux
   end
 
@@ -37,7 +37,7 @@ class Alltz < Formula
   end
 
   test do
-    assert_match "alltz 0.1.0", shell_output("#{bin}/alltz --version")
+    assert_match "alltz 0.1.2", shell_output("#{bin}/alltz --version")
 
     # Test CLI commands
     assert_match "Available Timezones", shell_output("#{bin}/alltz list")
